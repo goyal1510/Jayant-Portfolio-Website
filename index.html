@@ -2,10 +2,310 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jayant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    Portfolio
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./Images/J_logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>WEB DEVELOPER</p>
+          <h1>
+            Hi, I'm <span> Jayant </span><br />
+            From India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-------------- About ----------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Images/profile 1.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Jayant from Rajasthan , India. I'm currently pursuing my
+              B.Tech 4th year from Kiit University , Bhubaneswar (Orrisa) ,
+              India . I'm currently working in HighRadius Technologies as a Java
+              backend intern.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Backend Web Development</span><br />
+                  Java, SQL, Servlet, Spring, Struts, Hibernate
+                </li>
+                <li>
+                  <span>Frontend Web Development</span><br />
+                  HTML, CSS, JAVASCRIPT, ReactJS
+                </li>
+                <li>
+                  <span>Data Structure & Algorithm</span><br />
+                  C++ , Java
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span
+                    >HighRadius Technologies ( Intern ) ( 31/05/2023 - Present ) </span
+                  ><br />• Java Backend Intern (12/07/2023 - present) :-
+                  Designed and implemented REST APIs to support various
+                  front-end applications and third-party integrations using
+                  various skills like Java, SQL, Hibernate, Struts, and
+                  Spring.<br />
+                  • Java Summer Intern ( 31/05/2023 - 12/07/2023 ) :- Created a
+                  Fintech B2B management application .
+                </li>
+                <li>
+                  <span
+                    >NiiT ( Business Development Intern ) ( 08/07/2021 -
+                    29/09/2021 )</span
+                  ><br />• Managed a team of 20 event coordinators and campus
+                  representatives.<br />
+                  • Responsible for driving company registrations.<br />
+                  • Organized successful workshops in various technical areas
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>B.Tech - Cgpa : 8.94 </span><br />2024 :- Kalinga
+                  Institute of Industrial Technology, Bhubaneswar(Pursuing)
+                </li>
+
+                <li>
+                  <span>Intermediate - Percentage : 83.2</span><br />2020 :-
+                  Nosegay Public School, Sri Ganganagar
+                </li>
+                <li>
+                  <span>Matric - Percentage : 86.2</span><br />2018 :- ASM
+                  Public School, Padampur
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------Services------------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I am a freelancer , I usally used Design or Develop a Website.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h2>UI/UX Design</h2>
+            <p>I am a freelancer , I usally Design a Website.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>I am a freelancer , I usally Design Website Application.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------Portfolio------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./Images/work-1.png" />
+            <div class="layer">
+              <h3>B2B Invoice Management System</h3>
+              <p>
+                It is a full stack web development software help to maintain the
+                invoices
+              </p>
+              <a
+                href="https://github.com/goyal1510/B2B-Invoice-Management-System"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/work-2.png" />
+            <div class="layer">
+              <h3>Data Structure And Algorithm</h3>
+              <p>
+                I had solved various question on data structure and algorithm
+                using C++ .
+              </p>
+              <a
+                href="https://github.com/goyal1510/Data_Structure_And_Algorithm"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/work-3.png" />
+            <div class="layer">
+              <h3>Portfolio Website</h3>
+              <p>Website that let you know about me .</p>
+              <a href="https://Jayantsingh-123.github.io/profile_modal/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Back To Top</a>
+      </div>
+    </div>
+    <!--------Contact-------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              ><a href="mailto:goyal151002@gmail.com">goyal151002@gmail.com</a>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-square-phone"></i
+              ><a href="tel:+919413495328">+91 9413495328</a>
+            </p>
+
+            <div class="social-icons">
+              <a href="https://github.com/goyal1510" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/jayant-29714220b/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/goyal151002" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://www.instagram.com/goyal_1510/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="./Images/Jayant.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="https://formspree.io/f/xzblwywe" method="POST">
+              <input
+                placeholder="Your name"
+                name="name"
+                type="text"
+                tabindex="1"
+                autofocus
+                required
+              />
+              <input
+                placeholder="Your Email Address"
+                type="email"
+                tabindex="2"
+                name="email"
+                required
+              />
+              <textarea
+                placeholder="Type your message here...."
+                tabindex="5"
+                rows="5"
+                name="text"
+                required
+              ></textarea>
+              <input type="submit" value="Submit" class="formsubmit" />
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright © Jayant.</p>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx51JjEUsZgEH3XA3lUN78lHe6dr-6gxpHRKLxq1hXLwQeBQU6acmHGaEzLin1O1hY/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 1000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
